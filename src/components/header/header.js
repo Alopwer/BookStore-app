@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 
 const Header = ({ numItems, total }) => {
     return (
         <header className='header'>
-            <a href='#' className='logo'>BookStore</a>
-            <a className='shopping-cart'>
+            <Link to='/' className='logo'>BookStore</Link>
+            <Link to='/cart' className='shopping-cart'>
                 <svg 
                     height='22'
                     aria-hidden="true" 
                     focusable="false" 
                     data-prefix="fas" 
                     data-icon="shopping-cart" 
-                    class="svg-inline--fa fa-shopping-cart fa-w-18" 
+                    className="svg-inline--fa fa-shopping-cart fa-w-18" 
                     role="img" xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 5 576 512"
                     className='cart-icon'
@@ -24,7 +25,7 @@ const Header = ({ numItems, total }) => {
                     </path>
                 </svg>
                 {numItems} items (${total})
-            </a>
+            </Link>
         </header>
     )
 }

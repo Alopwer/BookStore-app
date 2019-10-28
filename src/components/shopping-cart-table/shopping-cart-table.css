@@ -1,0 +1,49 @@
+table {
+    width: 100%;
+    text-align: left;
+}
+
+thead {
+    border: 1px solid black
+}
+
+.btn {
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+    background: white;
+    margin: 5px 5px 0 0;
+}
+
+.btn-add {
+    color: #28a745;
+    border: 1px solid #28a745
+}
+.btn-add:hover {
+    color: #1e7e34;
+    border: 1px solid #1e7e34
+}
+
+.btn-minus {
+    border: 1px solid #ffc107;
+    color: #ffc107
+}
+.btn-minus:hover {
+    border: 1px solid #e0a800;
+    color: #e0a800
+}
+
+.btn-delete {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+.btn-delete:hover {
+    border: 1px solid #c82333;
+    color: #c82333;
+}
+
+.total {
+    text-align: right;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
